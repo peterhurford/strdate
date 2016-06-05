@@ -1,0 +1,17 @@
+Package: strdate
+Title: Convert a text string into a date.
+Version: 0.0.0.9000
+Authors@R: person("Peter", "Hurford", email = "peter@peterhurford.com", role = c("aut", "cre"))
+Description: See https://github.com/peterhurford/strdate for more details.
+Depends:
+    R (>= 3.2.3)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    checkr
+Suggests:
+    testthat
+Remotes:
+    peterhurford/checkr
+RoxygenNote: 5.0.1.9000
