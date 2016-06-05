@@ -1,6 +1,6 @@
 Package: strdate
 Title: Convert a text string into a date.
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: person("Peter", "Hurford", email = "peter@peterhurford.com", role = c("aut", "cre"))
 Description: See https://github.com/peterhurford/strdate for more details.
 Depends:
