@@ -1,4 +1,4 @@
-## strdate
+## strdate <a href="https://travis-ci.org/peterhurford/strdate"><img src="https://img.shields.io/travis/peterhurford/strdate.svg"></a> <a href="https://codecov.io/github/peterhurford/strdate"><img src="https://img.shields.io/codecov/c/github/peterhurford/strdate.svg"></a> <a href="https://github.com/peterhurford/strdate/tags"><img src="https://img.shields.io/github/tag/peterhurford/strdate.svg"></a>
 
 **strdate** converts a text string into a date:
 
