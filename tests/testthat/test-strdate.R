@@ -1,3 +1,7 @@
+test_that("now is now", {
+  expect_equal(strdate("now"), Sys.time(), tolerance = 0.1) 
+})
+
 describe("it can parse every format in the world", {
   grid <- expand.grid(1:10, c("day", "days", "second", "secs", "minutes", "month", "years", "eons"), c("+", "-"))
   apply(grid, 1, function(row) {

@@ -5,7 +5,7 @@
 #' @export
 strdate <- checkr::ensure(pre = time %is% simple_string,
 function(time) {
-  stopifnot(length(time) == 1)
+  if (identical(time, "now")) { return(Sys.time()) }
 
   # http://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/
   regex <- "[[:space:]]*([[:digit:]]+)[[:space:]]*([[:alpha:]]+)[[:space:]]*(from now|ago)[[:space:]]*"
