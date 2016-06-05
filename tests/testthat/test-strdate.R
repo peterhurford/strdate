@@ -19,3 +19,8 @@ describe("it can parse every format in the world", {
     })
   })
 })
+
+test_that("relative time works", {
+  expect_equal(strdate("1 min from now", relative_to = strdate("1 min ago")),
+    Sys.time(), tolerance = 0.1)
+})

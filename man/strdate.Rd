@@ -4,10 +4,12 @@
 \alias{strdate}
 \title{Convert a relative time character expression into an absolute date expression.}
 \usage{
-strdate(time)
+strdate(time, relative_to = Sys.time())
 }
 \arguments{
 \item{time}{character. The time character expression to convert.}
+
+\item{relative_to}{POSIXt. Relative to what time are we converting?}
 }
 \description{
 Convert a relative time character expression into an absolute date expression.

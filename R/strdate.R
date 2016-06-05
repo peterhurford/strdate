@@ -1,10 +1,12 @@
 #' Convert a relative time character expression into an absolute date expression.
 #'
 #' @param time character. The time character expression to convert.
+#' @param relative_to POSIXt. Relative to what time are we converting?
 #' @import checkr
 #' @export
-strdate <- checkr::ensure(pre = time %is% simple_string,
-function(time) {
+strdate <- checkr::ensure(
+  pre = list(time %is% simple_string, relative_to %is% POSIXt),
+function(time, relative_to = Sys.time()) {
   if (identical(time, "now")) { return(Sys.time()) }
 
   # http://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/
@@ -22,7 +24,7 @@ function(time) {
   op     <- if (tolower(tense) == "from now") `+` else `-`
 
   list2env(legal_unit_number_pair(unit, number), environment())
-  op(Sys.time(), as.difftime(number, units = unit))
+  op(relative_to, as.difftime(number, units = unit))
 })
 
 normalize_unit <- function(unit) {
