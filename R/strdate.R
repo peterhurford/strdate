@@ -8,7 +8,8 @@ function(time) {
   if (identical(time, "now")) { return(Sys.time()) }
 
   # http://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/
-  regex <- "[[:space:]]*([[:digit:]]+)[[:space:]]*([[:alpha:]]+)[[:space:]]*(from now|ago)[[:space:]]*"
+  regex <- paste0("[[:space:]]*([[:digit:]]+)[[:space:]]*([[:alpha:]]+)",
+    "[[:space:]]*(from now|ago)[[:space:]]*")
 
   matches <- regexpr(regex, time, perl = TRUE, ignore.case = TRUE)
   if (matches == -1) {
