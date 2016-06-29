@@ -6,15 +6,13 @@
 > strdate::strdate("now")
 [1] "2016-06-05 14:33:54 CDT"
 > strdate::strdate("3 minutes from now")
-[1] "2016-06-05 14:34:33 CDT"
+[1] "2016-06-05 14:36:54 CDT"
 > strdate::strdate("1 day from now")
-[1] "2016-06-06 14:30:55 CDT"
+[1] "2016-06-06 14:33:54 CDT"
 > strdate::strdate("3 minutes ago")
-[1] "2016-06-05 14:28:35 CDT"
-> strdate::strdate("3 minutes from now")
-[1] "2016-06-05 14:34:36 CDT"
+[1] "2016-06-05 14:30:54 CDT"
 > strdate::strdate("1 day and 3 minutes from now")
-[1] "2016-06-05 14:34:44 CDT"
+[1] "2016-06-06 14:36:54 CDT"
 ```
 
 #### Acknowledgements
