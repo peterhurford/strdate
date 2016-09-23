@@ -15,6 +15,15 @@
 [1] "2016-06-06 14:36:54 CDT"
 ```
 
+-
+
+**date_range** can enumerate days between two dates:
+
+> strdate::date_range("5 days ago", "now")
+[1] "2016-09-18" "2016-09-19" "2016-09-20" "2016-09-21" "2016-09-22"
+[6] "2016-09-23"
+
+
 #### Acknowledgements
 
 Code was taken from [Robert Krzyzanowski](https://github.com/robertzk)'s [testthatsomemore](https://github.com/robertzk/testthatsomemore) package, with permission.
