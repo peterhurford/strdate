@@ -12,6 +12,5 @@ Imports:
     checkr
 Suggests:
     testthat
-Remotes:
-    peterhurford/checkr
-RoxygenNote: 5.0.1.9000
+Remotes: peterhurford/checkr
+RoxygenNote: 5.0.1
