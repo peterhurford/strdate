@@ -19,9 +19,11 @@
 
 **date_range** can enumerate days between two dates:
 
+```R
 > strdate::date_range("5 days ago", "now")
 [1] "2016-09-18" "2016-09-19" "2016-09-20" "2016-09-21" "2016-09-22"
 [6] "2016-09-23"
+```
 
 
 #### Acknowledgements
