@@ -15,7 +15,6 @@
 [1] "2016-06-06 14:36:54 CDT"
 ```
 
--
 
 **date_range** can enumerate days between two dates:
 
