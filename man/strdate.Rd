@@ -14,4 +14,3 @@ strdate(time, relative_to = Sys.time())
 \description{
 Convert a relative time character expression into an absolute date expression.
 }
-

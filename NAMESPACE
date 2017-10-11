@@ -3,3 +3,4 @@
 export(date_range)
 export(strdate)
 import(checkr)
+importFrom(stats,setNames)

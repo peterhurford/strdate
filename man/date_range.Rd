@@ -14,4 +14,3 @@ date_range(beginning, end)
 \description{
 Enumerate a range of days starting from one time to another time.
 }
-

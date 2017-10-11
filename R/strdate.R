@@ -2,7 +2,7 @@
 #'
 #' @param time character. The time character expression to convert.
 #' @param relative_to POSIXt. Relative to what time are we converting?
-#' @import checkr
+#' @importFrom checkr ensure
 #' @export
 strdate <- checkr::ensure(
   pre = list(time %is% simple_string, relative_to %is% POSIXt),
@@ -51,8 +51,9 @@ legal_unit_number_pair <- function(unit, number) {
   list(unit = unit, number = number)
 }
 
+#' @importFrom stats setNames
 extract_time <- function(matches, time) {
-  setNames(nm = c("number", "unit", "tense"),
+  stats::setNames(nm = c("number", "unit", "tense"),
     Map(substring, time, s <- attr(matches, "capture.start"),
         s + attr(matches, "capture.length") - 1))
 }
