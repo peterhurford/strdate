@@ -2,7 +2,7 @@
 #'
 #' @param time character. The time character expression to convert.
 #' @param relative_to POSIXt. Relative to what time are we converting?
-#' @import checkr
+#' @importFrom checkr ensure
 #' @export
 strdate <- checkr::ensure(
   pre = list(time %is% simple_string, relative_to %is% POSIXt),

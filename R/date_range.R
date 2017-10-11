@@ -2,7 +2,7 @@
 #'
 #' @param beginning character. A relative time character expression (e.g., "4 days ago").
 #' @param end character. A relative time character expression (e.g., "now").
-#' @import checkr
+#' @importFrom checkr ensure
 #' @export
 date_range <- checkr::ensure(
   pre = list(beginning %is% simple_string, end %is% simple_string),
